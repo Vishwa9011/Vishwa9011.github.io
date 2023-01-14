@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Sacramento&display=swap');
+
+.navbar {
+     top: 0;
+     left: 0;
+     width: 100%;
+     /* height: 80px; */
+     z-index: 999;
+     display: flex;
+     position: sticky;
+     align-items: center;
+     justify-content: center;
+     background: #1d1d1d;
+     /* border: 1px solid red; */
+}
+
+.logoContainer {
+     flex: 2;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     font-weight: 600;
+}
+
+.logoContainer>p {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.logo {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: 'Austin', sans-serif;
+     font-size: 3rem;
+}
+
+.navLinks {
+     flex: 2;
+     display: flex;
+     justify-content: space-around;
+}
+
+.navLinksItems {
+     font-size: 1.1em;
+     letter-spacing: 1px;
+     padding-bottom: 6px !important;
+     font-weight: 600;
+}
+
+.navLinksItems {
+     position: relative;
+     letter-spacing: 2px;
+     padding-bottom: 2px;
+}
+
+.navLinksBox {
+     padding: 5px;
+     text-align: center;
+}
+
+.navLinksItems::before {
+     left: 0;
+     width: 0;
+     bottom: 0;
+     height: 3px;
+     content: "";
+     position: absolute;
+     border-radius: 80px;
+     transition: all 700ms;
+     background: transparent;
+}
+
+.navLinksBox:hover .navLinksItems::before {
+     width: 100%;
+     background: rgb(252, 16, 86) !important;
+}
+
+
+
+@media screen and (width<=1025px) {
+
+     .navbar {
+          /* border: 1px solid red; */
+     }
+
+     .navLinks {
+          flex-direction: column !important;
+     }
+
+     .navLinksBox {
+          cursor: pointer;
+          padding-bottom: 13px;
+     }
+
+     .navLinksBox:hover {
+          cursor: pointer;
+          background: #111;
+     }
+
+     .logoContainer * {
+          font-size: 1.4rem !important;
+     }
+
+     .logo {
+          font-size: 1.7rem !important;
+     }
+
+}

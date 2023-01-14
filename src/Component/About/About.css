@@ -1,0 +1,13 @@
+.educ-card {
+     cursor: pointer;
+     border: 2px solid #e3405f !important;
+     box-shadow: #c5475ea7 3px 3px 5px 2px, #c5475ea7 -3px -3px 5px 2px;
+}
+
+.education * {
+     transition: all 600ms !important;
+}
+
+.educ-card:hover {
+     box-shadow: #e3405f 3px 3px 15px 2px, #e3405f -3px -3px 15px 2px;
+}
