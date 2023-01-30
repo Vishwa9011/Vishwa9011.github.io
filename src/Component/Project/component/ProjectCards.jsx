@@ -4,7 +4,7 @@ import { techStackImage } from '../../../Data/TechStack'
 
 const ProjectCards = ({ title, description, live, codebase, techStack, landingPage }) => {
      return (
-          <Box overflow={'hidden'} color={'white'} p='3' w='100%' className='pr-card' borderRadius={'10px'} cursor='pointer'>
+          <Box overflow={'hidden'} color={'white'} p='3' w='95%' m='auto' className='pr-card' borderRadius={'10px'} cursor='pointer'>
                <Box borderRadius={'5px'} overflow='hidden' className='project-image flex' bg='#ffefe3' h='100%' w='100%' p='25px'>
                     <Image src={landingPage} className='pr-image' boxShadow={'dark-lg'} w='100%' h={'100%'} />
                </Box>
@@ -16,7 +16,7 @@ const ProjectCards = ({ title, description, live, codebase, techStack, landingPa
                     <Box display={'flex'} my='2'>
                          {techStack.map((tech) => {
                               console.log('tech: ', tech, tech.length)
-                              console.log('techStackImage.tech: ', techStackImage[tech]);
+                              console.log('techStackImage.tech: ', techStackImage[tech]); 
                               return <Image src={techStackImage[tech]} boxSize={{ base: "40px", sm: "30px", md: "35px", lg: "40px" }} m='1' />
                          })}
                     </Box>

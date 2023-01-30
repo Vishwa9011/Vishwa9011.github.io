@@ -65,7 +65,7 @@ const Skills = () => {
                          </Box>
                     </Box>
                     <Heading textAlign={'center'} my='10' data-aos="fade-up" data-aos-duration="1000">Github Stats</Heading>
-                    <Box w='100%' display='grid' justifyContent={'center'} alignItems='center' gridTemplateColumns={{ base: 'repeat(1,1fr)', sm: 'repeat(1,1fr)', md: 'repeat(2,1fr)' }} gap='10px' m='auto'>
+                    <Box className='github-card' w='100%' display='grid' justifyContent={'center'} alignItems='center' gridTemplateColumns={{ base: 'repeat(1,1fr)', sm: 'repeat(1,1fr)', md: 'repeat(2,1fr)' }} gap='10px' m='auto'>
                          <Box w='100%' className='flex' data-aos="fade-down" data-aos-duration="1000">
                               <Image width="100%" src="https://github-readme-stats.vercel.app/api?username=vishwa9011&show_icons=true&hide_border=true&theme=radical" />
                          </Box>

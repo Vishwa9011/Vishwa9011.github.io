@@ -62,3 +62,12 @@
      box-shadow: #e3405f 3px 3px 5px 2px;
      /* box-shadow: #e3405f 0px 5px 15px; */
 }
+
+@media screen and ( 425px <= width <= 768px) {
+     .github-card{
+          display: flex !important;
+     }
+     .github-card > div{
+          width:50%!important;
+     }
+}

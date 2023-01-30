@@ -14,7 +14,7 @@ const About = () => {
                               </Box>
                          </Box>
                          <Box color={'white'} w='70%' lineHeight={'30px'} className='user-summary'>
-                              <Box>
+                              <Box className='about-name'>
                                    <Heading textTransform={'uppercase'} letterSpacing='2px' color='rgb(227, 64, 95)'>Vishwa vivek yadav</Heading>
                                    <Heading textTransform={'uppercase'} letterSpacing='2px' fontSize={'25px'} fontWeight='500'>Full Stack web Developer</Heading>
                               </Box>

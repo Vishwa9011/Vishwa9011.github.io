@@ -3,7 +3,6 @@ import React from 'react'
 import resume from '../../pdf/Vishwa_Vivek_Yadav_Resume.pdf'
 import './LandingPage.css';
 const LandingPage = () => {
-
      return (
           <>
                <Box display={'flex'} id='LandingPage' className='landingPage' w='100%'>
