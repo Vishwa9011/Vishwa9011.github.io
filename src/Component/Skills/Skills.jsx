@@ -1,5 +1,7 @@
-import { Box, Heading, Image } from '@chakra-ui/react'
+import { Box, Center, Heading, Image } from '@chakra-ui/react'
 import React from 'react'
+import GitHubCalendar from 'react-github-calendar'
+import ReactTooltip from 'react-tooltip'
 import './Skills.css'
 const Skills = () => {
      return (
@@ -12,55 +14,55 @@ const Skills = () => {
                          <Box className='slide-track'>
                               {/* slides */}
                               <Box className='slide'>
-                                   <Image className='slide-image' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg' />
+                                   <Image className='slide-image' title='HTML5' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg' />
                               </Box>
                               <Box className='slide'>
-                                   <Image className='slide-image' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg' />
+                                   <Image className='slide-image' title='CSS3' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg' />
                               </Box>
                               <Box className='slide'>
-                                   <Image className='slide-image' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg' />
+                                   <Image className='slide-image' title='JAVASCRIPT' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg' />
                               </Box>
                               <Box className='slide'>
-                                   <Image className='slide-image' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg' />
+                                   <Image className='slide-image' title='REACT' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg' />
                               </Box>
                               <Box className='slide'>
-                                   <Image className='slide-image' src='https://cdn.worldvectorlogo.com/logos/nextjs-2.svg' />
+                                   <Image className='slide-image' title='NEXTJS' src='https://cdn.worldvectorlogo.com/logos/nextjs-2.svg' />
                               </Box>
                               <Box className='slide'>
-                                   <Image className='slide-image' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg' />
+                                   <Image className='slide-image' title='BOOTSTRAP' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg' />
                               </Box>
                               <Box className='slide'>
-                                   <Image className='slide-image' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg' />
+                                   <Image className='slide-image' title='NODEJS' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg' />
                               </Box>
                               <Box className='slide'>
-                                   <Image className='slide-image' src='https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg' />
+                                   <Image className='slide-image' title='TAILWIND' src='https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg' />
                               </Box>
 
                               {/* Slides double */}
 
                               <Box className='slide'>
-                                   <Image className='slide-image' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg' />
+                                   <Image className='slide-image' title='HTML5' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg' />
                               </Box>
                               <Box className='slide'>
-                                   <Image className='slide-image' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg' />
+                                   <Image className='slide-image' title='CSS3' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg' />
                               </Box>
                               <Box className='slide'>
-                                   <Image className='slide-image' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg' />
+                                   <Image className='slide-image' title='JAVASCRIPT' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg' />
                               </Box>
                               <Box className='slide'>
-                                   <Image className='slide-image' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg' />
+                                   <Image className='slide-image' title='REACT' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg' />
                               </Box>
                               <Box className='slide'>
-                                   <Image className='slide-image' src='https://cdn.worldvectorlogo.com/logos/nextjs-2.svg' />
+                                   <Image className='slide-image' title='NEXTJS' src='https://cdn.worldvectorlogo.com/logos/nextjs-2.svg' />
                               </Box>
                               <Box className='slide'>
-                                   <Image className='slide-image' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg' />
+                                   <Image className='slide-image' title='BOOTSTRAP' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg' />
                               </Box>
                               <Box className='slide'>
-                                   <Image className='slide-image' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg' />
+                                   <Image className='slide-image' title='NODEJS' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg' />
                               </Box>
                               <Box className='slide'>
-                                   <Image className='slide-image' src='https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg' />
+                                   <Image className='slide-image' title='TAILWIND' src='https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg' />
                               </Box>
                          </Box>
                     </Box>
@@ -73,6 +75,9 @@ const Skills = () => {
                               <Image width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=vishwa9011&hide_border=true&theme=radical" />
                          </Box>
                     </Box>
+                    <Center mt='50px'>
+                         <GitHubCalendar username="vishwa9011" color="#4a8af4" children={<ReactTooltip html />} />
+                    </Center>
                </Box>
           </Box>
 

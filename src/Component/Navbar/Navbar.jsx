@@ -55,12 +55,12 @@ const Navbar = () => {
                                    <Text className={Styles.navLinksItems} as='a' href='#Contact'>Contact</Text>
                               </Box>
                               <Box className={Styles.navLinksBox}>
-                                   <Text className={Styles.navLinksItems} as='a' href={resume} target='_blank'>Resume</Text>
+                                   <Text className={Styles.navLinksItems} as='a' cursor={'pointer'} href={resume} download='Vishwa_Vivek_Yadav_Resume' onClick={(e) => window.open("https://drive.google.com/file/d/1cPoxPCZTNaIWFici__RAnZxwNmhPOnOC/view")} target='_blank'>Resume</Text>
                               </Box>
                          </Box>
                     </GridItem>}
                </Grid>
-          </Box >
+          </Box>
      )
 }
 

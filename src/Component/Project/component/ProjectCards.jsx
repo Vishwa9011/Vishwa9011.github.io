@@ -1,6 +1,6 @@
 import { Box, Button, Image, Text } from '@chakra-ui/react'
-import React from 'react'
 import { techStackImage } from '../../../Data/TechStack'
+import React from 'react'
 
 const ProjectCards = ({ title, description, live, codebase, techStack, landingPage }) => {
      return (
@@ -11,13 +11,11 @@ const ProjectCards = ({ title, description, live, codebase, techStack, landingPa
                <Box className='pr-details'>
                     <Box>
                          <Text letterSpacing={'1px'} my='2' fontSize={'1.5rem'} fontWeight='semibold' color='#e3405f'>{title}</Text>
-                         <Text my='2' letterSpacing={'1px'} fontSize={{ base: "1.2rem", sm: ".8rem", md: '1rem' }}>{description}</Text>
+                         <Text my='2' className='project-card-desc' letterSpacing={'1px'} fontSize={{ base: "1.2rem", sm: ".8rem", md: '1rem' }}>{description}</Text>
                     </Box>
-                    <Box display={'flex'} my='2'>
-                         {techStack.map((tech) => {
-                              console.log('tech: ', tech, tech.length)
-                              console.log('techStackImage.tech: ', techStackImage[tech]); 
-                              return <Image src={techStackImage[tech]} boxSize={{ base: "40px", sm: "30px", md: "35px", lg: "40px" }} m='1' />
+                    <Box display={'flex'} my='2' flexWrap={'wrap'}>
+                         {techStack.map((tech, i) => {
+                              return <Image key={i} title={tech.toUpperCase()} src={techStackImage[tech]} boxSize={{ base: "40px", sm: "30px", md: "35px", lg: "40px" }} m='1' />
                          })}
                     </Box>
                     <Box display={'flex'} justifyContent='space-between' alignItems={'center'}>
