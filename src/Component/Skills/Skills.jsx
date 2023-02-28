@@ -1,4 +1,4 @@
-import { Box, Center, Heading, Image } from '@chakra-ui/react'
+import { Box, Center, Flex, Heading, Image } from '@chakra-ui/react'
 import React from 'react'
 import GitHubCalendar from 'react-github-calendar'
 import ReactTooltip from 'react-tooltip'
@@ -66,6 +66,32 @@ const Skills = () => {
                               </Box>
                          </Box>
                     </Box>
+                    <Heading textAlign={'center'} my='10' data-aos="fade-up" data-aos-duration="1000">
+                         Tools
+                    </Heading>
+                    <Flex className='tools-container'>
+                         <Box className='tools'>
+                              <Image title='GITHUB' src='https://img.icons8.com/ios-glyphs/512/github.png' />
+                         </Box>
+                         <Box className='tools'>
+                              <Image title='VS CODE' src='https://i.ibb.co/61nck0S/download-removebg-preview.png' />
+                         </Box>
+                         <Box className='tools'>
+                              <Image title='GIT' src='https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg' />
+                         </Box>
+                         <Box className='tools'>
+                              <Image title='REPLIT' src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/New_Replit_Logo.svg/1200px-New_Replit_Logo.svg.png' />
+                         </Box>
+                         <Box className='tools'>
+                              <Image title='FIREBASE' src='https://img.icons8.com/color/512/firebase.png' />
+                         </Box>
+                         <Box className='tools'>
+                              <Image title='CODEPEN' src='https://img.icons8.com/ios-filled/512/codepen.png' />
+                         </Box>
+                         <Box className='tools'>
+                              <Image title='CODE SANDBOX' src='https://img.icons8.com/external-tal-revivo-color-tal-revivo/512/external-codesandbox-an-online-code-editor-and-sharing-web-application-projects-logo-color-tal-revivo.png' />
+                         </Box>
+                    </Flex>
                     <Heading textAlign={'center'} my='10' data-aos="fade-up" data-aos-duration="1000">Github Stats</Heading>
                     <Box className='github-card' w='100%' display='grid' justifyContent={'center'} alignItems='center' gridTemplateColumns={{ base: 'repeat(1,1fr)', sm: 'repeat(1,1fr)', md: 'repeat(2,1fr)' }} gap='10px' m='auto'>
                          <Box w='100%' className='flex' data-aos="fade-down" data-aos-duration="1000">
@@ -75,7 +101,7 @@ const Skills = () => {
                               <Image width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=vishwa9011&hide_border=true&theme=radical" />
                          </Box>
                     </Box>
-                    <Center mt='50px'>
+                    <Center className='calendar'>
                          <GitHubCalendar username="vishwa9011" color="#4a8af4" children={<ReactTooltip html />} />
                     </Center>
                </Box>
