@@ -11,7 +11,7 @@ export const projectsData = [
      {
           id: 2,
           title: 'PabloParking',
-          description: 'This project based on vehicle parking system. It is a collaborative project.',
+          description: 'Pablo Parking is a user-friendly parking app that makes finding and paying for parking a hassle-free experience. This app allows users to easily locate available parking spots in real-time. It is a collaborative project.',
           techStack: ['html', 'css', 'javascript',],
           live: "https://pabloparking.netlify.app/",
           codebase: "https://github.com/Vishwa9011/PabloParking",
@@ -20,7 +20,7 @@ export const projectsData = [
      {
           id: 3,
           title: 'Sephora',
-          description: 'Sephora is a famous beauty brand. It is an collaborative project.',
+          description: 'Sephora offers beauty products including cosmetics, skincare, body, fragrance, nail color, beauty tools, body lotions and haircare. It is an collaborative project.',
           techStack: ['html', 'css', 'javascript',],
           live: "https://sephora-vishwa.netlify.app/",
           codebase: "https://github.com/Vishwa9011/sephora",
@@ -29,7 +29,7 @@ export const projectsData = [
      {
           id: 4,
           title: 'ApniDukaan',
-          description: 'ApniDukaan is a major Indian fashion e-commerce company.',
+          description: `Apni dukaan is a one stop shop for all your fashion and lifestyle needs. Being India's largest e-commerce store for fashion and lifestyle products`,
           techStack: ['html', 'css', 'typescript', 'react', 'chakra', 'firebase',],
           live: "https://apnidukaan-9a863.web.app/",
           codebase: "https://github.com/Vishwa9011/moaning-act-434",

@@ -63,11 +63,62 @@
      /* box-shadow: #e3405f 0px 5px 15px; */
 }
 
-@media screen and ( 425px <= width <= 768px) {
-     .github-card{
+
+
+.tools-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+}
+
+.tools {
+     padding: 10px;
+     margin-top: 20px;
+     border-radius: 10px;
+     border: 2px solid #e3405f;
+     box-shadow: #c5475ea7 3px 3px 5px 2px;
+}
+
+.tools>img {
+     object-fit: contain;
+     object-position: center;
+     width: 100px;
+     aspect-ratio: 1 / 1;
+}
+
+.tools-container>.tools:last-child {
+     filter: invert(100);
+}
+
+
+.calendar {
+     scale: 1.4;
+     margin: auto;
+     margin-top: 100px;
+     width: max-content;
+
+}
+
+
+@media only screen and (width <=768) {
+     .calendar {
+          scale: 1;
+     }
+}
+
+
+@media screen and (425px <=width <=768px) {
+     .github-card {
           display: flex !important;
      }
-     .github-card > div{
-          width:50%!important;
+
+     .github-card>div {
+          width: 50% !important;
+     }
+}
+
+@media only screen and (width <=768) {
+     .tools>img {
+          width: 50px;
      }
 }

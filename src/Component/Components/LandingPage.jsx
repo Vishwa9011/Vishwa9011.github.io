@@ -33,7 +33,7 @@ const LandingPage = () => {
                               </Box>
                               <Box display={'flex'} gap='20px'>
                                    <Button className='BTN' as='a' href='#Contact' _active={{ scale: "0.1" }} bg='rgb(252,16,86)' colorScheme={'rgb(252,16,86)'} color='white' fontSize='1.2em'>Contact me</Button>
-                                   <Button className='BTN' as='a' href={resume} download='Vishwa_Vivek_Yadav_Resume' _active={{ scale: "0.1" }} bg='rgb(252,16,86)' colorScheme={'rgb(252,16,86)'} color='white' fontSize='1.2em'>Download CV</Button>
+                                   <Button className='BTN' as='a' href={resume} download='fw21_0101_Vishwa_Vivek_Yadav_Resume' _active={{ scale: "0.1" }} bg='rgb(252,16,86)' colorScheme={'rgb(252,16,86)'} color='white' fontSize='1.2em'>Download CV</Button>
                               </Box>
                          </Box>
                     </Box>
