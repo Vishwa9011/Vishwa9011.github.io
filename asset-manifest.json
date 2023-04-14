@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.eaee6f6b.css",
-    "main.js": "/static/js/main.e780a609.js",
+    "main.css": "/static/css/main.de071a8e.css",
+    "main.js": "/static/js/main.d82ec97d.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/Vishwa_Vivek_Yadav_Resume.pdf": "/static/media/Vishwa_Vivek_Yadav_Resume.72923c16f7465295cc39.pdf",
     "index.html": "/index.html",
-    "main.eaee6f6b.css.map": "/static/css/main.eaee6f6b.css.map",
-    "main.e780a609.js.map": "/static/js/main.e780a609.js.map",
+    "main.de071a8e.css.map": "/static/css/main.de071a8e.css.map",
+    "main.d82ec97d.js.map": "/static/js/main.d82ec97d.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eaee6f6b.css",
-    "static/js/main.e780a609.js"
+    "static/css/main.de071a8e.css",
+    "static/js/main.d82ec97d.js"
   ]
 }
